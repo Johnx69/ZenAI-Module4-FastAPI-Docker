@@ -3,6 +3,10 @@ FROM pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime
 ENV HF_HUB_DISABLE_SYMLINKS_WARNING=1 \
     HF_TOKEN=${HF_TOKEN:-""}
 
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc git && \
+    rm -rf /var/lib/apt/lists/*
+
 COPY requirements.txt /tmp/
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
 
