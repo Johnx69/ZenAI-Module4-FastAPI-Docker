@@ -1,0 +1,6 @@
+transformers
+diffusers
+torch
+fastapi
+pydantic
+uvicorn[standard]
