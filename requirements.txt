@@ -4,3 +4,4 @@ torch
 fastapi
 pydantic
 uvicorn[standard]
+pillow
