@@ -23,6 +23,9 @@ pipe = StableDiffusionPipeline.from_pretrained(
     MODEL_ID, torch_dtype=dtype, safety_checker=None
 ).to(device)
 
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy", "model_loaded": pipe is not None}
 
 # ── Endpoint ───────────────────────────────────────────────────────
 @app.post("/txt2img")
