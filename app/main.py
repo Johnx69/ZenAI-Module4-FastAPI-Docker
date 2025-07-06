@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import StreamingResponse
 from diffusers import StableDiffusionPipeline
-from models import SDRequest
+from .models import SDRequest
 from fastapi.middleware.cors import CORSMiddleware
 import torch, io, os
 
