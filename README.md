@@ -25,7 +25,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 # 3. Run
-uvicorn app.main:app --reload
+uvicorn app.main:app --host 0.0.0.0 --reload
 # → Service at http://localhost:8000
 ```
 
