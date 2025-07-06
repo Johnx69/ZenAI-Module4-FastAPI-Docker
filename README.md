@@ -23,13 +23,6 @@ uvicorn app.main:app --host 0.0.0.0 --reload
 
 > **The easiest way to run the full stack with nginx reverse proxy**
 
-### Prerequisites
-
-- Docker ≥ 20.10
-- Docker Compose ≥ 2.0
-- (GPU build) NVIDIA driver ≥ 525 **+** nvidia‑container‑toolkit
-- (Private models) valid Hugging Face token: `export HF_TOKEN=your_token_here`
-
 ### 1. Run the full stack
 
 ```bash
