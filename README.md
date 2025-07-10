@@ -132,6 +132,5 @@ This command:
 ### Extra notes
 
 - Weights are cached in a Modal **Volume** → no egress fees, fast cold‑starts.
-- Adjust `container_idle_timeout` in **`modal_app.py`** to tune idle‑shutdown.
+- Adjust `timeout` in **`modal_app.py`** to tune idle‑shutdown.
 - Local, Docker and Modal paths are identical, so you can swap environments freely.
-- Use `modal serve` during development, `modal deploy` for production.
