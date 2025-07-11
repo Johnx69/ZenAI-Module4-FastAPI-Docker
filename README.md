@@ -102,8 +102,6 @@ This command:
 @app.function(
     gpu="A10G",              # GPU type (A10G, A100, T4, etc.)
     timeout=300,             # Max execution time
-    container_idle_timeout=240,  # Scale-down delay
-    allow_concurrent_inputs=10   # Concurrent requests
 )
 ```
 
